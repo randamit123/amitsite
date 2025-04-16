@@ -63,7 +63,7 @@ export default function Home() {
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white">Amit Rand</h1>
               <h2 className="text-xl md:text-2xl font-medium text-zinc-400">ML Researcher & Software Engineer</h2>
               <p className="max-w-[600px] text-zinc-400 md:text-xl">
-                I'm a UCLA student passionate about building with AI, computer vision, and medical imaging.
+                I'm a 4th year UCLA undergraduate graduating in 2026 passionate about building with AI, computer vision, and medical imaging.
               </p>
               <div className="flex gap-4 pt-4">
                 <Button className="bg-primary hover:bg-primary/90 text-white" asChild>
@@ -101,7 +101,7 @@ export default function Home() {
             <div className="grid gap-8 lg:grid-cols-2">
               <div className="space-y-4">
                 <p className="text-zinc-400">
-                  I'm a Computer Science student at UCLA with a focus on artificial intelligence and machine learning.
+                  I'm a Computer Science and Mathematics student at UCLA with a focus on artificial intelligence and machine learning.
                   My passion lies at the intersection of technology and healthcare, where I develop innovative solutions
                   using computer vision and medical imaging.
                 </p>
@@ -178,6 +178,13 @@ export default function Home() {
                 description="Worked on computer vision machine learning models to classify strains of infectious keratits under the mentorship of a Post Doctoral Scholar."
                 logo="/images/stanford_university_logo.jpg"
               />
+              <ExperienceItem
+                title="Software Development Engineer Intern"
+                company="Empowerly"
+                period="May 2023 - March 2024"
+                description="Built full-stack features and deployed intelligent bots for marketing automation and data-driven engagement using React, Node.js, PostgreSQL, and LLMs."
+                logo="/images/empowerly.png"
+              />
             </div>
           </div>
         </section>
@@ -217,6 +224,30 @@ export default function Home() {
                 ]}
                 link="https://github.com/randamit123/Latex"
               />
+              <ProjectCard
+                title="InterviewSensei"
+                description="AI-powered interview preparation platform that uses advanced NLP techniques to analyze and provide feedback on user responses, helping candidates improve their interview skills."
+                tags={["Python", "OpenAI", "Flask", "React.js", "Tailwind CSS"]}
+                link="https://github.com/randamit123/mockinterviewrep"
+              ></ProjectCard>
+              <ProjectCard
+                title="Resign"
+                description="A web app that uses computer vision to translate sign language into text and speech, making communication more accessible for the hearing impaired."
+                tags={["Python", "OpenCV", "TensorFlow", "LSTM", "Keras", "Flask", "React.js", "Tailwind CSS"]}
+                link="https://github.com/randamit123/diamondhacks-frontend"
+              ></ProjectCard>
+              <ProjectCard
+              title="Git-Friend"
+              description="A CLI tool that integrates with OpenAI's ChatGPT to help you generate and execute Git commands from natural language instructions."
+              tags={["Shell", "GPT-3.5", "Git"]}
+              link="https://github.com/randamit123/git-friend"
+              ></ProjectCard>
+              <ProjectCard
+              title="My Personal Site"
+              description="This portfolio website showcasing my work and experience."
+              tags={["Next.js", "React.js", "Tailwind CSS", "TypeScript", "v0"]}
+              link="https://github.com/randamit123/amitsite"
+              ></ProjectCard>
             </div>
             <div className="flex justify-center pt-6">
               <Button
