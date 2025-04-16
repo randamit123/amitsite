@@ -189,36 +189,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Volunteering Section */}
-        <section id="volunteering" className="py-12 md:py-24 scroll-mt-16 animate-fade-in">
-          <div className="space-y-8">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Volunteering and Campus Activities</h2>
-            <div className="space-y-6">
-              <ExperienceItem
-                title="Learning Assistant"
-                company="UCLA Computer Science Department"
-                period="March 2025 - Present"
-                description="Learning Assistant for COM SCI 180: Introduction to Algorithms and Complexity. Lead collaborative discussions, provide one-on-one academic support, and contribute to refining course materials to improve student comprehension and engagement."
-                logo="/images/uclacs.jpg"
-              />
-              <ExperienceItem
-                title="Member"
-                company="VEST @ UCLA"
-                period="January 2025 - Present"
-                description="Active member of UCLA’s premier entrepreneurship organization. Leading a product team focused on developing 'Stealth,' a startup concept currently in incubation."
-                logo="/images/vest.jpg"
-              />
-              <ExperienceItem
-              title="Computer Engineer (Electrical Subteam)"
-              company="Santa Clara University Formula SAE"
-              period="September 2023 - May 2024"
-              description="Engineered embedded systems and real-time data acquisition tools for SCU’s Formula SAE electric race car. Focused on the Brake Plausibility Device System (BPDS) and Accelerator Pedal Position Sensor (APPS), ensuring both performance and regulatory compliance."
-              logo="/images/scuformula.jpg"
-            />
-            </div>
-          </div>
-        </section>
-
         {/* Projects Section */}
         <section id="projects" className="py-12 md:py-24 scroll-mt-16 animate-fade-in">
           <div className="space-y-8">
@@ -426,6 +396,36 @@ export default function Home() {
                   <CourseCard name="Advanced Deep Learning and Neural Nets" code="ECE C247B (Grad)" level="grad" />
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Volunteering Section */}
+        <section id="volunteering" className="py-12 md:py-24 scroll-mt-16 animate-fade-in">
+          <div className="space-y-8">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Volunteering and Campus Activities</h2>
+            <div className="space-y-6">
+              <ExperienceItem
+                title="Learning Assistant"
+                company="UCLA Computer Science Department"
+                period="March 2025 - Present"
+                description="Learning Assistant for COM SCI 180: Introduction to Algorithms and Complexity. Lead collaborative discussions, provide one-on-one academic support, and contribute to refining course materials to improve student comprehension and engagement."
+                logo="/images/uclacs.jpg"
+              />
+              <ExperienceItem
+                title="Member"
+                company="VEST @ UCLA"
+                period="January 2025 - Present"
+                description="Active member of UCLA’s premier entrepreneurship organization. Leading a product team focused on developing 'Stealth,' a startup concept currently in incubation."
+                logo="/images/vest.jpg"
+              />
+              <ExperienceItem
+              title="Computer Engineer (Electrical Subteam)"
+              company="Santa Clara University Formula SAE"
+              period="September 2023 - May 2024"
+              description="Engineered embedded systems and real-time data acquisition tools for SCU’s Formula SAE electric race car. Focused on the Brake Plausibility Device System (BPDS) and Accelerator Pedal Position Sensor (APPS), ensuring both performance and regulatory compliance."
+              logo="/images/scuformula.jpg"
+            />
             </div>
           </div>
         </section>
