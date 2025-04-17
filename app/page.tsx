@@ -146,9 +146,16 @@ export default function Home() {
               <ExperienceItem
                 title="Embedded Software Development Engineer Intern"
                 company="Amazon"
-                period="June 2025 - September 2025"
-                description=" Incoming Summer 2025 at Special Project Labs, Project Kuiper :)"
+                period="Summer 2025"
+                description="Incoming Summer 2025 at Special Project Labs, Project Kuiper :)"
                 logo="/images/amazon_logo.jpg"
+              />
+              <ExperienceItem
+                title="Research Scientist Intern"
+                company="Leidos"
+                period="April 2025 - Present"
+                description="Developing LLM and generative model based internal-facing solutions at the AI Research Accelerator Lab."
+                logo="/images/leidos_logo.jpg"
               />
               <ExperienceItem
                 title="Generative AI Intern"
