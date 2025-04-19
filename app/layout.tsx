@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Amit Rand - Software Engineer & ML Researcher",
   description:
     "Personal website of Amit Rand, a UCLA student passionate about AI, computer vision, and medical imaging.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 }
 
 export default function RootLayout({
@@ -17,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark scroll-smooth">
       <body className={`${inter.className} bg-black text-white`}>{children}</body>
     </html>
   )

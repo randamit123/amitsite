@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, ExternalLink, ArrowRight, GraduationCap, BookOpen } from "lucide-react"
 import Link from "next/link"
+import { TypingAnimation } from "@/components/typing-animation"
 
 export default function Home() {
   return (
@@ -55,15 +56,15 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="container py-10">
+      <main className="container py-8">
         {/* Hero Section */}
-        <section className="py-12 md:py-24 lg:py-32 animate-fade-in">
+        <section className="py-10 md:py-16 lg:py-24 animate-fade-in">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white">Amit Rand</h1>
-              <h2 className="text-xl md:text-2xl font-medium text-zinc-400">ML Researcher & Software Engineer</h2>
+               <TypingAnimation />
               <p className="max-w-[600px] text-zinc-400 md:text-xl">
-                I'm a 4th year UCLA undergraduate graduating in 2026 passionate about building with AI, computer vision, and medical imaging.
+                I'm a 3rd year UCLA undergraduate graduating in 2026 passionate about building with AI, computer vision, and medical imaging.
               </p>
               <div className="flex gap-4 pt-4">
                 <Button className="bg-primary hover:bg-primary/90 text-white" asChild>
@@ -83,7 +84,7 @@ export default function Home() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-zinc-800 shadow-xl shadow-primary/10">
                 <Image
-                  src="/placeholder.svg?height=320&width=320"
+                  src="/images/amitcurr.png"
                   alt="Amit Rand"
                   fill
                   className="object-cover transition-transform hover:scale-105 duration-500"
@@ -95,7 +96,7 @@ export default function Home() {
         </section>
 
         {/* About Me Section */}
-        <section id="about" className="py-12 md:py-24 scroll-mt-16 animate-fade-in">
+        <section id="about" className="py-10 md:py-16 scroll-mt-16 animate-fade-in">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">About Me</h2>
             <div className="grid gap-8 lg:grid-cols-2">
@@ -139,13 +140,14 @@ export default function Home() {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="py-12 md:py-24 scroll-mt-16 animate-fade-in">
+        <section id="experience" className="py-10 md:py-16 scroll-mt-16 animate-fade-in">
           <div className="space-y-8">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Experience</h2>
             <div className="space-y-6">
               <ExperienceItem
                 title="Embedded Software Development Engineer Intern"
                 company="Amazon"
+                companyUrl="https://www.aboutamazon.com/what-we-do/devices-services/project-kuiper"
                 period="Summer 2025"
                 description="Incoming Summer 2025 at Special Project Labs, Project Kuiper :)"
                 logo="/images/amazon_logo.jpg"
@@ -153,6 +155,7 @@ export default function Home() {
               <ExperienceItem
                 title="Research Scientist Intern"
                 company="Leidos"
+                companyUrl="https://www.leidos.com"
                 period="April 2025 - Present"
                 description="Developing LLM and generative model based internal-facing solutions at the AI Research Accelerator Lab."
                 logo="/images/leidos_logo.jpg"
@@ -160,6 +163,7 @@ export default function Home() {
               <ExperienceItem
                 title="Generative AI Intern"
                 company="Scale AI"
+                companyUrl="https://scale.com/"
                 period="February 2025 - Present"
                 description="Collaborating with AI researchers to optimize generative model performance through architectural tuning, fine-tuning strategies, and data preprocessing for complex reasoning tasks."
                 logo="/images/scaleai_logo.jpg"
@@ -168,12 +172,14 @@ export default function Home() {
                 title="Research Assistant"
                 company="UCLA Cardiovascular Imaging Research Lab"
                 period="July 2024 - Present"
+                companyUrl="https://cvirl.dgsom.ucla.edu/"
                 description="Developing machine learning models and data processing pipelines for cardiovascular MRI based analysis. Collaborating with medical professionals to improve diagnostic accuracy."
                 logo="/images/uclahealth.svg"
               />
              <ExperienceItem
               title="Software Development Engineer Intern"
               company="Q.ai"
+              companyUrl="https://q.ai/"
               period="August 2024 - October 2024"
               description="Built full-stack tools and dashboards to support unbiased data generation, deployed deep learning models, and enhanced internal data pipelines under NDA."
               logo="/images/qai.svg"
@@ -181,6 +187,7 @@ export default function Home() {
               <ExperienceItem
                 title="Research Apprenticeship"
                 company="Department of Biomedical Datascience"
+                companyUrl="https://dbds.stanford.edu/"
                 period="January 2024 - June 2024"
                 description="Worked on computer vision machine learning models to classify strains of infectious keratits under the mentorship of a Post Doctoral Scholar."
                 logo="/images/stanford_university_logo.jpg"
@@ -188,6 +195,7 @@ export default function Home() {
               <ExperienceItem
                 title="Software Development Engineer Intern"
                 company="Empowerly"
+                companyUrl="https://empowerly.com/"
                 period="May 2023 - March 2024"
                 description="Built full-stack features and deployed intelligent bots for marketing automation and data-driven engagement using React, Node.js, PostgreSQL, and LLMs."
                 logo="/images/empowerly.png"
@@ -197,7 +205,7 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-12 md:py-24 scroll-mt-16 animate-fade-in">
+        <section id="projects" className="py-10 md:py-16 scroll-mt-16 animate-fade-in">
           <div className="space-y-8">
              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Projects</h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -271,7 +279,7 @@ export default function Home() {
         </section>
 
          {/* Research Section */}
-        <section id="research" className="py-12 md:py-24 scroll-mt-16 animate-fade-in">
+        <section id="research" className="py-10 md:py-16 scroll-mt-16 animate-fade-in">
           <div className="space-y-8">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Research</h2>
 
@@ -293,34 +301,7 @@ export default function Home() {
                     <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Machine Learning</Badge>
                     <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Transformers</Badge>
                   </div>
-
                 </div>
-
-                {/* <div className="pt-4 border-t border-zinc-800 flex flex-col sm:flex-row gap-4 sm:gap-8">
-                  <div className="flex items-center gap-2 text-zinc-400">
-                    <span className="text-sm font-medium">arXiv:</span>
-                    <Link
-                      href="https://www.arxiv.org/abs/2504.02277"
-                      className="text-primary hover:text-primary/80 transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      2504.02277 [cs.CV]
-                    </Link>
-                  </div>
-
-                  <div className="flex items-center gap-2 text-zinc-400">
-                    <span className="text-sm font-medium">DOI:</span>
-                    <Link
-                      href="https://doi.org/10.48550/arXiv.2504.02277"
-                      className="text-primary hover:text-primary/80 transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      10.48550/arXiv.2504.02277
-                    </Link>
-                  </div>
-                </div> */}
 
                 <div className="flex justify-end">
                   <Button
@@ -339,7 +320,7 @@ export default function Home() {
         </section>
 
         {/* Courses Section */}
-        <section id="courses" className="py-12 md:py-24 scroll-mt-16 animate-fade-in">
+        <section id="courses" className="py-10 md:py-16 scroll-mt-16 animate-fade-in">
           <div className="space-y-8">
             <div className="flex items-center justify-between">
                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
@@ -369,52 +350,42 @@ export default function Home() {
             <div className="space-y-8">
               {/* Computer Science Courses */}
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-white border-l-4 border-primary pl-3">Computer Science</h3>
+                <h3 className="text-xl font-semibold text-white border-l-4 border-primary pl-3">Computer Science, Electrical & Computer Engineering</h3>
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  <CourseCard name="Reinforcement Learning" code="COM SCI 260R (Grad)" level="grad" />
+                  <CourseCard name="Advanced Deep Learning and Neural Nets" code="ECE C247B (Grad)" level="grad" />
+                  <CourseCard name="Deep Learning and Neural Networks" code="ECE C147/247A (Grad)" level="grad" />
                   <CourseCard name="Introduction to Algorithms and Complexity" code="COM SCI 180"level="upper"  />
                   <CourseCard name="Operating Systems" code="COM SCI 111" level="upper" />
                   <CourseCard name="Software Construction" code="COM SCI 35L" level="lower" />
-                  <CourseCard name="Special Courses in Computer Science: Introduction to Robotics" code="COM SCI 188" level="upper" />
-                  <CourseCard name="Reinforcement Learning" code="COM SCI 260R (Grad)" level="grad" />
                 </div>
               </div>
 
               {/* Mathematics and Statistics Courses */}
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-white border-l-4 border-primary pl-3">
-                  Mathematics & Statistics
+                  Mathematics, Statistics
                 </h3>
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                  <CourseCard name="Introduction to Probability" code="STATS 100A" level="upper" />
-                  <CourseCard name="Linear Algebra" code="MATH 115A" level="upper" />
-                  <CourseCard name="Real Analysis" code="MATH 131A" level="upper" />
-                  <CourseCard name="Complex Analysis" code="MATH 132" level="upper" />
                   <CourseCard name="Machine Learning" code="MATH M156" level="upper" /> 
-                </div>
-              </div>
-
-              {/* Electrical & Computer Engineering Courses */}
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-white border-l-4 border-primary pl-3">
-                  Electrical & Computer Engineering
-                </h3>
-                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                  <CourseCard name="Deep Learning and Neural Networks" code="ECE C147/247A (Grad)" level="grad" />
-                  <CourseCard name="Advanced Deep Learning and Neural Nets" code="ECE C247B (Grad)" level="grad" />
+                  <CourseCard name="Real Analysis" code="MATH 131A" level="upper" />
+                  <CourseCard name="Linear Algebra" code="MATH 115A" level="upper" />
+                  <CourseCard name="Introduction to Probability" code="STATS 100A" level="upper" />
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Volunteering Section */}
-        <section id="volunteering" className="py-12 md:py-24 scroll-mt-16 animate-fade-in">
+        {/* Volunteering Section
+        <section id="volunteering" className="py-10 md:py-16 scroll-mt-16 animate-fade-in">
           <div className="space-y-8">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Volunteering and Campus Activities</h2>
             <div className="space-y-6">
               <ExperienceItem
                 title="Learning Assistant"
                 company="UCLA Computer Science Department"
+                companyUrl="https://www.cs.ucla.edu/"
                 period="March 2025 - Present"
                 description="Learning Assistant for COM SCI 180: Introduction to Algorithms and Complexity. Lead collaborative discussions, provide one-on-one academic support, and contribute to refining course materials to improve student comprehension and engagement."
                 logo="/images/uclacs.jpg"
@@ -422,6 +393,7 @@ export default function Home() {
               <ExperienceItem
                 title="Member"
                 company="VEST @ UCLA"
+                companyUrl=""
                 period="January 2025 - Present"
                 description="Active member of UCLA’s premier entrepreneurship organization. Leading a product team focused on developing 'Stealth,' a startup concept currently in incubation."
                 logo="/images/vest.jpg"
@@ -429,16 +401,17 @@ export default function Home() {
               <ExperienceItem
               title="Computer Engineer (Electrical Subteam)"
               company="Santa Clara University Formula SAE"
+              companyUrl=""
               period="September 2023 - May 2024"
               description="Engineered embedded systems and real-time data acquisition tools for SCU’s Formula SAE electric race car. Focused on the Brake Plausibility Device System (BPDS) and Accelerator Pedal Position Sensor (APPS), ensuring both performance and regulatory compliance."
               logo="/images/scuformula.jpg"
             />
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Contact Section */}
-        <section id="contact" className="py-12 md:py-24 scroll-mt-16 animate-fade-in">
+         <section id="contact" className="py-10 md:py-16 scroll-mt-16 animate-fade-in">
           <div className="space-y-8">
              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Contact</h2>
             <div className="grid gap-8 lg:grid-cols-2">
@@ -447,17 +420,17 @@ export default function Home() {
                   I'm always open to discussing new projects, opportunities, or partnerships. Feel free to reach out to
                   me through any of the following channels.
                 </p>
-                <div className="space-y-2">
-                   <div className="flex items-center gap-2 text-zinc-300">
+                <div className="space-y-4 mt-6">
+                   <div className="flex items-center gap-3 text-zinc-300 hover:text-primary transition-all p-3 rounded-md border border-zinc-800 bg-zinc-900/30 hover:border-primary/50 hover:bg-zinc-900/50 duration-300">
                     <Mail className="h-5 w-5 text-zinc-500" />
-                    <a href="mailto:amit.rand@ucla.edu">amit.rand@ucla.edu</a>
+                    <a href="mailto:amit.rand@ucla.edu" className="hover:text-primary transition-colors">amit.rand@ucla.edu</a>
                   </div>
 
-                  <div className="flex items-center gap-2">
+                 <div className="flex items-center gap-3 text-zinc-300 hover:text-primary transition-all p-3 rounded-md border border-zinc-800 bg-zinc-900/30 hover:border-primary/50 hover:bg-zinc-900/50 duration-300">
                     <Linkedin className="h-5 w-5 text-zinc-500" />
                     <Link
                       href="https://www.linkedin.com/in/amit-rand-361b30218/"
-                      className="text-zinc-300 hover:text-primary transition-colors"
+                      className="hover:text-primary transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -615,12 +588,14 @@ function ProjectCard({
 function ExperienceItem({
   title,
   company,
+  companyUrl,
   period,
   description,
   logo,
 }: {
   title: string
   company: string
+  companyUrl: string
   period: string
   description: string
   logo: string
@@ -639,7 +614,15 @@ function ExperienceItem({
         <div>
           <h3 className="font-semibold text-white">{title}</h3>
           <p className="text-sm text-zinc-500">
-            {company} | {period}
+            <Link
+              href={companyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+            >
+              {company}
+            </Link>{" "}
+            | {period}
           </p>
         </div>
         <p className="text-zinc-400">{description}</p>
