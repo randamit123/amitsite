@@ -257,12 +257,12 @@ export default function Home() {
               tags={["Shell", "GPT-3.5", "Git"]}
               link="https://github.com/randamit123/git-friend"
               ></ProjectCard>
-              <ProjectCard
+              {/* <ProjectCard
               title="My Personal Site"
               description="This portfolio website showcasing my work and experience."
               tags={["Next.js", "React.js", "Tailwind CSS", "TypeScript", "v0"]}
               link="https://github.com/randamit123/amitsite"
-              ></ProjectCard>
+              ></ProjectCard> */}
             </div>
             <div className="flex justify-center pt-6">
               <Button
