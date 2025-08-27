@@ -145,18 +145,26 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Experience</h2>
             <div className="space-y-6">
               <ExperienceItem
-                title="Embedded Software Development Engineer Intern"
+                title="Research Assistant"
+                company="UCLA Cardiovascular Imaging Research Lab"
+                period="July 2024 - Present"
+                companyUrl="https://cvirl.dgsom.ucla.edu/"
+                description="Researching generative AI for MRI reconstruction. Grateful recipient of the James T. Henry and Meredith Henry Undergraduate Science Research Scholarship."
+                logo="/images/uclahealth.svg"
+              />
+              <ExperienceItem
+                title="Software Development Engineer Intern"
                 company="Amazon"
                 companyUrl="https://www.aboutamazon.com/what-we-do/devices-services/project-kuiper"
-                period="Summer 2025"
-                description="Incoming Summer 2025 at Special Project Labs, Project Kuiper :)"
+                period="June 2025-September 2025"
+                description="Developing machine learning models to calibrate satellite phased antenna arrays for Project Kuiper, Amazon's satellite internet constellation."
                 logo="/images/amazon_logo.jpg"
               />
               <ExperienceItem
                 title="Research Scientist Intern"
                 company="Leidos"
                 companyUrl="https://www.leidos.com"
-                period="April 2025 - Present"
+                period="April 2025 - June 2025"
                 description="Developing LLM and generative model based internal-facing solutions at the AI Research Accelerator Lab."
                 logo="/images/leidos_logo.jpg"
               />
@@ -164,17 +172,9 @@ export default function Home() {
                 title="Generative AI Intern"
                 company="Scale AI"
                 companyUrl="https://scale.com/"
-                period="February 2025 - Present"
+                period="February 2025 - May 2025"
                 description="Collaborating with AI researchers to optimize generative model performance through architectural tuning, fine-tuning strategies, and data preprocessing for complex reasoning tasks."
                 logo="/images/scaleai_logo.jpg"
-              />
-              <ExperienceItem
-                title="Research Assistant"
-                company="UCLA Cardiovascular Imaging Research Lab"
-                period="July 2024 - Present"
-                companyUrl="https://cvirl.dgsom.ucla.edu/"
-                description="Developing machine learning models and data processing pipelines for cardiovascular MRI based analysis. Collaborating with medical professionals to improve diagnostic accuracy."
-                logo="/images/uclahealth.svg"
               />
              <ExperienceItem
               title="Software Development Engineer Intern"
@@ -352,10 +352,12 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-white border-l-4 border-primary pl-3">Computer Science, Electrical & Computer Engineering</h3>
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <CourseCard name="Automated Reasoning: Theory and Applications" code="CS 264A (Grad)" level="grad" />
                   <CourseCard name="Reinforcement Learning" code="COM SCI 260R (Grad)" level="grad" />
                   <CourseCard name="Advanced Deep Learning and Neural Nets" code="ECE C247B (Grad)" level="grad" />
                   <CourseCard name="Deep Learning and Neural Networks" code="ECE C147/247A (Grad)" level="grad" />
-                  <CourseCard name="Introduction to Algorithms and Complexity" code="COM SCI 180"level="upper"  />
+                  <CourseCard name="Deep Learning for Computer Vision" code="COM SCI 163" level="upper" />
+                  <CourseCard name="Introduction to Algorithms and Complexity" code="COM SCI 180" level="upper" />
                   <CourseCard name="Operating Systems" code="COM SCI 111" level="upper" />
                   <CourseCard name="Software Construction" code="COM SCI 35L" level="lower" />
                 </div>
@@ -370,6 +372,7 @@ export default function Home() {
                   <CourseCard name="Machine Learning" code="MATH M156" level="upper" /> 
                   <CourseCard name="Real Analysis" code="MATH 131A" level="upper" />
                   <CourseCard name="Linear Algebra" code="MATH 115A" level="upper" />
+                  <CourseCard name="Probability and Statistics 2" code="MATH 170S" level="upper" /> 
                   <CourseCard name="Introduction to Probability" code="STATS 100A" level="upper" />
                 </div>
               </div>
