@@ -12,7 +12,7 @@ export default function Home() {
       {/* Header */}
       <header className="sticky top-0 z-40 w-full border-b border-zinc-800 glass-effect">
         <div className="container flex h-16 items-center justify-between">
-          <div className="font-bold text-xl text-white">Kyle He</div>
+          <div className="font-bold text-xl text-white">Amit Rand</div>
           <nav className="hidden md:flex items-center gap-6">
              <Link href="#about" className="text-sm font-medium text-zinc-400 transition-colors hover:text-primary">
               About
@@ -61,7 +61,7 @@ export default function Home() {
         <section className="py-10 md:py-16 lg:py-24 animate-fade-in">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white">Kyle He</h1>
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white">Amit Rand</h1>
                <TypingAnimation />
               <p className="max-w-[600px] text-zinc-400 md:text-xl">
                 I'm a 3rd year UCLA undergraduate graduating in 2026 passionate about building with AI, computer vision, and medical imaging.
@@ -85,7 +85,7 @@ export default function Home() {
               <div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-zinc-800 shadow-xl shadow-primary/10">
                 <Image
                   src="/images/amitcurr.png"
-                  alt="Kyle He"
+                  alt="Amit Rand"
                   fill
                   className="object-cover transition-transform hover:scale-105 duration-500"
                   priority
@@ -290,7 +290,7 @@ export default function Home() {
                     Beyond Conventional Transformers: The Medical X-ray Attention (MXA) Block for Improved Multi-Label
                     Diagnosis Using Knowledge Distillation
                   </h3>
-                  <p className="text-zinc-400">Kyle He, Hadi Ibrahim</p>
+                  <p className="text-zinc-400">Amit Rand, Hadi Ibrahim</p>
                 </div>
 
                 <div className="space-y-4">
@@ -508,7 +508,7 @@ export default function Home() {
        <footer className="border-t border-zinc-800 py-6 md:py-8">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm text-zinc-500 md:text-left">
-            © {new Date().getFullYear()} Kyle He. All rights reserved.
+            © {new Date().getFullYear()} Amit Rand. All rights reserved.
           </p>
           <div className="flex gap-4">
              <Button variant="ghost" size="icon" className="text-zinc-500 hover:text-white hover:bg-zinc-800" asChild>
