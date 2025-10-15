@@ -6,9 +6,9 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Amit Rand - Software Engineer & ML Researcher",
+  title: "Kyle He - Software Engineer & ML Researcher",
   description:
-    "Personal website of Amit Rand, a UCLA student passionate about AI, computer vision, and medical imaging.",
+    "Personal website of Kyle He, a UCLA student passionate about AI, computer vision, and medical imaging.",
   icons: {
     icon: "/favicon.svg",
   },
