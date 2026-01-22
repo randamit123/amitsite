@@ -462,7 +462,6 @@ export default function Home() {
                   <CourseCard name="Reinforcement Learning" code="COM SCI 260R (Grad)" level="grad" />
                   <CourseCard name="Advanced Deep Learning and Neural Nets" code="ECE C247B (Grad)" level="grad" />
                   <CourseCard name="Deep Learning and Neural Networks" code="ECE C147/247A (Grad)" level="grad" />
-                  <CourseCard name="Deep Learning for Computer Vision" code="COM SCI 163" level="upper" />
                   <CourseCard name="Theory of Computing" code="COM SCI 181" level="upper" />
                   <CourseCard name="Introduction to Algorithms and Complexity" code="COM SCI 180" level="upper" />
                   <CourseCard name="Operating Systems" code="COM SCI 111" level="upper" />
