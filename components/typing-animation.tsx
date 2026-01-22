@@ -9,9 +9,9 @@ export function TypingAnimation() {
   const [typingSpeed, setTypingSpeed] = useState(150)
 
   const phrases = [
-    'AI/ML Researcher',
-    'Software Engineer',
-    'UCLA Math & CS Undergraduate'
+    'Generative AI Researcher',
+    'Robot Learning Researcher',
+    'UCLA Math & CS'
   ]
 
   useEffect(() => {

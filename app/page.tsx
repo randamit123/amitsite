@@ -20,11 +20,11 @@ export default function Home() {
             <Link href="#experience" className="text-sm font-medium text-zinc-400 transition-colors hover:text-primary">
               Experience
             </Link>
-            <Link href="#projects" className="text-sm font-medium text-zinc-400 transition-colors hover:text-primary">
-              Projects
-            </Link>
             <Link href="#research" className="text-sm font-medium text-zinc-400 transition-colors hover:text-primary">
               Research
+            </Link>
+            <Link href="#projects" className="text-sm font-medium text-zinc-400 transition-colors hover:text-primary">
+              Projects
             </Link>
              <Link href="#courses" className="text-sm font-medium text-zinc-400 transition-colors hover:text-primary">
               Relevant Coursework
@@ -41,7 +41,7 @@ export default function Home() {
               </Link>
             </Button>
             <Button variant="ghost" size="icon" className="text-zinc-400 hover:text-white hover:bg-zinc-800" asChild>
-              <Link href="https://www.linkedin.com/in/amit-rand-361b30218/" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.linkedin.com/in/amitrand" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -64,7 +64,7 @@ export default function Home() {
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white">Amit Rand</h1>
                <TypingAnimation />
               <p className="max-w-[600px] text-zinc-400 md:text-xl">
-                I'm a 3rd year UCLA undergraduate graduating in 2026 passionate about building with AI, computer vision, and medical imaging.
+                I'm a final-year undergraduate at UCLA studying Computer Science and Mathematics. I am pursuing a  PhD in CS with an emphasis on mechanistic machine learning, computer vision, and robot learning.
               </p>
               <div className="flex gap-4 pt-4">
                 <Button className="bg-primary hover:bg-primary/90 text-white" asChild>
@@ -77,7 +77,7 @@ export default function Home() {
                   className="border-zinc-700 text-zinc-300 hover:bg-zinc-800 hover:text-white"
                   asChild
                 >
-                  <Link href="#projects">View my work</Link>
+                  <Link href="#research">View my work</Link>
                 </Button>
               </div>
             </div>
@@ -102,13 +102,31 @@ export default function Home() {
             <div className="grid gap-8 lg:grid-cols-2">
               <div className="space-y-4">
                 <p className="text-zinc-400">
-                  I'm a Computer Science and Mathematics student at UCLA with a focus on artificial intelligence and machine learning.
-                  My passion lies at the intersection of technology and healthcare, where I develop innovative solutions
-                  using computer vision and medical imaging.
+                  I am a final-year undergraduate studying Mathematics and Computer Science at UCLA. I have recently applied to CS PhD programs to pursue my research interests in mechanistic machine learning. I am a grateful recipient of the James T. Henry and Meredith Henry UCLA Undergraduate Research Scholarship.
                 </p>
                 <p className="text-zinc-400">
-                  When I'm not coding, you can find me playing pickup soccer on the field, reading about the latest AI
-                  research, or experimenting with new technologies to solve real-world problems.
+                  My research philosophy centers on building robust systems that respect the structure of underlying problems. I believe the next leap in ML will come from models that don't just fit data, but internalize domain structure by embedding priors directly into learning.
+                </p>
+                <p className="text-zinc-400">
+                  I'm currently a research assistant at the UCLA Robotic Intelligence Lab (URIL), working on physics-based retrieval augmented imitation learning advised by{" "}
+                  <Link 
+                    href="https://yuchen-cui.github.io/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline transition-colors"
+                  >
+                    Professor Yuchen Cui
+                  </Link>
+                  . I'm also at the Cardiovascular Imaging Research Lab (CVIRL) at UCLA's David Geffen School of Medicine, working on accelerated 5D MRI reconstruction using generative modeling, advised by{" "}
+                  <Link 
+                    href="https://www.uclahealth.org/providers/kim-lien-nguyen" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline transition-colors"
+                  >
+                    Professor Kim-Lien Nguyen
+                  </Link>
+                  .
                 </p>
               </div>
               <div className="space-y-4">
@@ -126,13 +144,15 @@ export default function Home() {
                    <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Machine Learning</Badge>
                    <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Deep Learning</Badge>
                    <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Reinforcement Learning</Badge>
+                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Imitation Learning</Badge>
+                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Robot Learning</Badge>
+                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Generative AI</Badge>
+                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Transformers</Badge>
+                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Diffusion Models</Badge>
                    <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Medical Imaging</Badge>
-                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">React</Badge>
-                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Next.js</Badge>
-                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Tailwind CSS</Badge>
-                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Express.js</Badge>
-                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Flask</Badge>
-                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">SQL</Badge>
+                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">MRI Reconstruction</Badge>
+                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Vision-Language Models</Badge>
+                   <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Neural Networks</Badge>
                 </div>
               </div>
             </div>
@@ -145,11 +165,19 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Experience</h2>
             <div className="space-y-6">
               <ExperienceItem
+                title="Undergraduate Researcher"
+                company="UCLA Robotic Intelligence Lab (URIL)"
+                period="September 2025 - Present"
+                companyUrl="https://uril.cs.ucla.edu/"
+                description="Working on physics-based data retrieval for imitation learning and synthetic data generation using VLMs and diffusion models, advised by Professor Yuchen Cui."
+                logo="/images/ucla-cs.jpg"
+              />
+              <ExperienceItem
                 title="Research Assistant"
                 company="UCLA Cardiovascular Imaging Research Lab"
                 period="July 2024 - Present"
                 companyUrl="https://cvirl.dgsom.ucla.edu/"
-                description="Researching generative AI for MRI reconstruction. Grateful recipient of the James T. Henry and Meredith Henry Undergraduate Science Research Scholarship."
+                description="Researching diffusion models for 2D, 3D, and 4D MRI reconstruction, advised by Professor Kim-Lien Nguyen and Professor Dan Ruan."
                 logo="/images/uclahealth.svg"
               />
               <ExperienceItem
@@ -157,7 +185,7 @@ export default function Home() {
                 company="Amazon"
                 companyUrl="https://www.aboutamazon.com/what-we-do/devices-services/project-kuiper"
                 period="June 2025-September 2025"
-                description="Developing machine learning models to calibrate satellite phased antenna arrays for Project Kuiper, Amazon's satellite internet constellation."
+                description="Developed machine learning models to calibrate satellite phased antenna arrays for Project Kuiper, Amazon's satellite internet constellation."
                 logo="/images/amazon_logo.jpg"
               />
               <ExperienceItem
@@ -165,15 +193,15 @@ export default function Home() {
                 company="Leidos"
                 companyUrl="https://www.leidos.com"
                 period="April 2025 - June 2025"
-                description="Developing LLM and generative model based internal-facing solutions at the AI Research Accelerator Lab."
+                description="Developed LLM and generative model based internal-facing solutions at the AI Research Accelerator Lab. Also worked with the Graph AI research group on proprietary projects."
                 logo="/images/leidos_logo.jpg"
               />
               <ExperienceItem
-                title="Generative AI Intern"
+                title="Technical Advisor Intern"
                 company="Scale AI"
                 companyUrl="https://scale.com/"
                 period="February 2025 - May 2025"
-                description="Collaborating with AI researchers to optimize generative model performance through architectural tuning, fine-tuning strategies, and data preprocessing for complex reasoning tasks."
+                description="Collaborated with AI researchers to optimize generative model performance through architectural tuning, fine-tuning strategies, and data preprocessing for complex reasoning tasks."
                 logo="/images/scaleai_logo.jpg"
               />
              <ExperienceItem
@@ -189,7 +217,7 @@ export default function Home() {
                 company="Department of Biomedical Datascience"
                 companyUrl="https://dbds.stanford.edu/"
                 period="January 2024 - June 2024"
-                description="Worked on computer vision machine learning models to classify strains of infectious keratits under the mentorship of a Post Doctoral Scholar."
+                description="Worked on computer vision machine learning models to classify strains of infectious keratits advised by Post Doctoral Scholar Tushar Mungle."
                 logo="/images/stanford_university_logo.jpg"
               />
               <ExperienceItem
@@ -204,6 +232,124 @@ export default function Home() {
           </div>
         </section>
 
+         {/* Research Section */}
+        <section id="research" className="py-10 md:py-16 scroll-mt-16 animate-fade-in">
+          <div className="space-y-8">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Research</h2>
+
+            <div className="space-y-6">
+              {/* Paper 1: In Progress - Robot Learning */}
+              <div className="card-gradient border border-zinc-800 rounded-lg overflow-hidden">
+                <div className="p-6 space-y-6">
+                  <div className="space-y-2">
+                    <h3 className="text-2xl font-bold text-white">
+                      Sketch2IL: Zero-Shot Imitation Learning via Trajectory-Based Retrieval and Human-Guided Sketch Queries
+                    </h3>
+                    <p className="text-zinc-400">Amit Rand, Yuchen Cui</p>
+                    <p className="text-sm text-zinc-500">
+                      In Progress
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="flex flex-wrap gap-2">
+                      <Badge className="bg-orange-900/40 text-orange-300 border-orange-700/50">In Progress</Badge>
+                      <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Robot Learning</Badge>
+                      <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Imitation Learning</Badge>
+                      <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Zero-Shot Learning</Badge>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Paper 2: MICCAI 2026 */}
+              <div className="card-gradient border border-zinc-800 rounded-lg overflow-hidden">
+                <div className="p-6 space-y-6">
+                  <div className="space-y-2">
+                    <h3 className="text-2xl font-bold text-white">
+                      Complex-Valued Frequency-Domain Diffusion
+                    </h3>
+                    <p className="text-zinc-400">Amit Rand, Kim-Lien Nguyen</p>
+                    <p className="text-sm text-zinc-500">
+                      Under Review at MICCAI Medical Image Computing and Computer Assisted Intervention 2026
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="flex flex-wrap gap-2">
+                      <Badge className="bg-blue-900/40 text-blue-300 border-blue-700/50">Under Review</Badge>
+                      <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Complex-Valued Networks</Badge>
+                      <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Reconstruction</Badge>
+                      <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Diffusion Models</Badge>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Paper 3: ISMRM 2026 */}
+              <div className="card-gradient border border-zinc-800 rounded-lg overflow-hidden">
+                <div className="p-6 space-y-6">
+                  <div className="space-y-2">
+                    <h3 className="text-2xl font-bold text-white">
+                      Diffusion-based k-space Inpainting for Improved 5D Free-running CMR Reconstruction
+                    </h3>
+                    <p className="text-zinc-400">Thomas Coudert, Amit Rand, Kim-Lien Nguyen</p>
+                    <p className="text-sm text-zinc-500">
+                      Under Review at 2026 ISMRM & ISMRT Annual Meeting & Exhibition
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="flex flex-wrap gap-2">
+                      <Badge className="bg-blue-900/40 text-blue-300 border-blue-700/50">Under Review</Badge>
+                      <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Diffusion</Badge>
+                      <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Frequency Domain</Badge>
+                      <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">4D Reconstruction</Badge>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Paper 4: NeurIPS 2025 */}
+              <div className="card-gradient border border-zinc-800 rounded-lg overflow-hidden">
+                <div className="p-6 space-y-6">
+                  <div className="space-y-2">
+                    <h3 className="text-2xl font-bold text-white">
+                      Beyond Conventional Transformers: A Medical X-ray Attention Block for Improved Multi-Label Diagnosis
+                    </h3>
+                    <p className="text-zinc-400">Amit Rand, Hadi Ibrahim</p>
+                    <p className="text-sm text-zinc-500">
+                      Presented at NeurIPS 2025 • Poster in Workshop: Imageomics: Discovering Biological Knowledge from Images Using AI
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="flex flex-wrap gap-2">
+                      <Badge className="bg-green-900/40 text-green-300 border-green-700/50">NeurIPS 2025</Badge>
+                      <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Computer Vision</Badge>
+                      <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Medical Imaging</Badge>
+                      <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Machine Learning</Badge>
+                      <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Transformers</Badge>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-end">
+                    <Button
+                      variant="outline"
+                      className="border-zinc-700 text-zinc-300 hover:bg-zinc-800 hover:text-white"
+                      asChild
+                    >
+                      <Link href="https://neurips.cc/virtual/2025/loc/san-diego/128744" target="_blank" rel="noopener noreferrer">
+                        View Paper <ExternalLink className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Projects Section */}
         <section id="projects" className="py-10 md:py-16 scroll-mt-16 animate-fade-in">
           <div className="space-y-8">
@@ -211,9 +357,10 @@ export default function Home() {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
                 title="MedKnight"
-                description="AR-assisted medical system that harnesses AI and immersive technology to guide first responders through critical, time-sensitive procedures (Best Implementation Award at CalHacks 11.0.)"
+                description="AR-assisted medical system that harnesses AI and immersive technology to guide first responders through critical, time-sensitive procedures."
                 tags={["Python", "Oculus SDK", "Fetch.ai", "Flask", "OpenCV", "SQL", "C#", "Unity", "Deepgram"]}
                 link="https://devpost.com/software/medknight"
+                award="Best Implementation Award - CalHacks 11.0"
               />
               <ProjectCard
                 title="fMBV-Microvascular Network Pipeline GUI"
@@ -278,47 +425,6 @@ export default function Home() {
           </div>
         </section>
 
-         {/* Research Section */}
-        <section id="research" className="py-10 md:py-16 scroll-mt-16 animate-fade-in">
-          <div className="space-y-8">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">Research</h2>
-
-            <div className="card-gradient border border-zinc-800 rounded-lg overflow-hidden">
-              <div className="p-6 space-y-6">
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-bold text-white">
-                    Beyond Conventional Transformers: The Medical X-ray Attention (MXA) Block for Improved Multi-Label
-                    Diagnosis Using Knowledge Distillation
-                  </h3>
-                  <p className="text-zinc-400">Amit Rand, Hadi Ibrahim</p>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Pre-Print</Badge>
-                    <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Computer Vision</Badge>
-                    <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Medical Imaging</Badge>
-                    <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Machine Learning</Badge>
-                    <Badge className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700">Transformers</Badge>
-                  </div>
-                </div>
-
-                <div className="flex justify-end">
-                  <Button
-                    variant="outline"
-                    className="border-zinc-700 text-zinc-300 hover:bg-zinc-800 hover:text-white"
-                    asChild
-                  >
-                    <Link href="https://www.arxiv.org/abs/2504.02277" target="_blank" rel="noopener noreferrer">
-                      Read Paper <ExternalLink className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Courses Section */}
         <section id="courses" className="py-10 md:py-16 scroll-mt-16 animate-fade-in">
           <div className="space-y-8">
@@ -352,11 +458,12 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-white border-l-4 border-primary pl-3">Computer Science, Electrical & Computer Engineering</h3>
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                <CourseCard name="Automated Reasoning: Theory and Applications" code="CS 264A (Grad)" level="grad" />
+                  <CourseCard name="Interactive Robot Learning" code="COM SCI 269 (Grad)" level="grad" />
                   <CourseCard name="Reinforcement Learning" code="COM SCI 260R (Grad)" level="grad" />
                   <CourseCard name="Advanced Deep Learning and Neural Nets" code="ECE C247B (Grad)" level="grad" />
                   <CourseCard name="Deep Learning and Neural Networks" code="ECE C147/247A (Grad)" level="grad" />
                   <CourseCard name="Deep Learning for Computer Vision" code="COM SCI 163" level="upper" />
+                  <CourseCard name="Theory of Computing" code="COM SCI 181" level="upper" />
                   <CourseCard name="Introduction to Algorithms and Complexity" code="COM SCI 180" level="upper" />
                   <CourseCard name="Operating Systems" code="COM SCI 111" level="upper" />
                   <CourseCard name="Software Construction" code="COM SCI 35L" level="lower" />
@@ -370,6 +477,9 @@ export default function Home() {
                 </h3>
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   <CourseCard name="Machine Learning" code="MATH M156" level="upper" /> 
+                  <CourseCard name="Numerical Analysis I" code="MATH 151A" level="upper" />
+                  <CourseCard name="Numerical Analysis II" code="MATH 151B" level="upper" />
+                  <CourseCard name="Complex Analysis" code="MATH 132" level="upper" />
                   <CourseCard name="Real Analysis" code="MATH 131A" level="upper" />
                   <CourseCard name="Linear Algebra" code="MATH 115A" level="upper" />
                   <CourseCard name="Probability and Statistics 2" code="MATH 170S" level="upper" /> 
@@ -432,12 +542,12 @@ export default function Home() {
                  <div className="flex items-center gap-3 text-zinc-300 hover:text-primary transition-all p-3 rounded-md border border-zinc-800 bg-zinc-900/30 hover:border-primary/50 hover:bg-zinc-900/50 duration-300">
                     <Linkedin className="h-5 w-5 text-zinc-500" />
                     <Link
-                      href="https://www.linkedin.com/in/amit-rand-361b30218/"
+                      href="https://www.linkedin.com/in/amitrand"
                       className="hover:text-primary transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      linkedin.com/amit-rand
+                      linkedin.com/in/amitrand
                     </Link>
                   </div>
                 </div>
@@ -518,7 +628,7 @@ export default function Home() {
               </Link>
             </Button>
              <Button variant="ghost" size="icon" className="text-zinc-500 hover:text-white hover:bg-zinc-800" asChild>
-              <Link href="https://www.linkedin.com/in/amit-rand-361b30218/" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.linkedin.com/in/amitrand" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-4 w-4" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -547,11 +657,13 @@ function ProjectCard({
   description,
   tags,
   link,
+  award,
 }: {
   title: string
   description: string
   tags: string[]
   link?: string
+  award?: string
 }) {
   return (
      <Card className="card-gradient border-zinc-800 overflow-hidden transition-all hover:shadow-lg hover:shadow-primary/5 hover:border-zinc-700">
@@ -560,12 +672,19 @@ function ProjectCard({
       </CardHeader>
       <CardContent className="space-y-4">
         <CardDescription className="text-zinc-400">{description}</CardDescription>
-        <div className="flex flex-wrap gap-1">
-          {tags.map((tag) => (
-            <Badge key={tag} variant="outline" className="text-xs border-zinc-700 text-zinc-400 bg-zinc-900/50">
-              {tag}
+        <div className="space-y-2">
+          <div className="flex flex-wrap gap-1">
+            {tags.map((tag) => (
+              <Badge key={tag} variant="outline" className="text-xs border-zinc-700 text-zinc-400 bg-zinc-900/50">
+                {tag}
+              </Badge>
+            ))}
+          </div>
+          {award && (
+            <Badge className="bg-primary/20 text-primary border-primary/50 hover:bg-primary/30 w-fit text-xs">
+              {award}
             </Badge>
-          ))}
+          )}
         </div>
       </CardContent>
       <CardFooter>
