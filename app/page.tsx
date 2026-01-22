@@ -84,7 +84,7 @@ export default function Home() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-zinc-800 shadow-xl shadow-primary/10">
                 <Image
-                  src="/images/amitcurr.png"
+                  src="/images/amit.jpg"
                   alt="Amit Rand"
                   fill
                   className="object-cover transition-transform hover:scale-105 duration-500"
